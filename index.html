@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jiron Technology | Innovación desde Nicaragua</title>
+    <title>Jiron Technology | Servicio Técnico Somotillo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -14,11 +14,12 @@
             color: white;
             display: flex;
             justify-content: center;
-            padding: 40px 0;
+            padding: 20px 0;
+            min-height: 100vh;
         }
         .container {
             width: 90%;
-            max-width: 450px;
+            max-width: 400px;
             padding: 2rem;
             border-radius: 20px;
             background: rgba(255, 255, 255, 0.05);
@@ -28,33 +29,31 @@
             text-align: center;
         }
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-bottom: 15px;
-            border: 2px solid #00d2ff;
-            background: white; /* Por si el logo es oscuro */
+            border: 3px solid #00d2ff;
+            background: #fff;
+            object-fit: contain;
         }
-        h1 { font-size: 1.8rem; margin: 10px 0; text-transform: uppercase; letter-spacing: 1px; }
-        .description { opacity: 0.8; margin-bottom: 25px; }
-
-        /* SECCIÓN SERVICIOS */
-        .services {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 30px;
+        h1 { font-size: 1.6rem; margin: 10px 0; text-transform: uppercase; color: #00d2ff; }
+        
+        .services-list {
             text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 25px;
         }
         .service-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
         }
-        .service-item i { color: #00d2ff; margin-right: 5px; }
+        .service-item i { color: #00d2ff; margin-right: 12px; width: 20px; text-align: center; }
 
-        /* BOTONES */
         .btn {
             display: flex;
             align-items: center;
@@ -69,31 +68,32 @@
         }
         .whatsapp { background: #25d366; }
         .telegram { background: #0088cc; }
-        .btn:hover { transform: scale(1.03); }
+        .btn:hover { transform: translateY(-3px); filter: brightness(1.1); }
 
-        .footer { margin-top: 20px; font-size: 0.8rem; opacity: 0.5; }
+        .footer { margin-top: 20px; font-size: 0.8rem; opacity: 0.6; }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="JT" class="logo" onerror="this.src='https://via.placeholder.com/100?text=JT'">
+        <img src="logo.png" alt="Jiron Technology" class="logo" onerror="this.src='https://via.placeholder.com/120x120?text=LOGO'">
         
         <h1>JIRON TECHNOLOGY</h1>
-        <p class="description">Innovación y Soluciones Digitales</p>
+        <p style="margin-bottom: 20px; opacity: 0.8;">Servicio Técnico Especializado</p>
 
-        <div class="services">
-            <div class="service-item"><i class="fas fa-tools"></i> Soporte Técnico</div>
-            <div class="service-item"><i class="fas fa-code"></i> Desarrollo Web</div>
-            <div class="service-item"><i class="fas fa-mobile-alt"></i> Venta de Celulares</div>
-            <div class="service-item"><i class="fas fa-network-wired"></i> Redes y Wifi</div>
+        <div class="services-list">
+            <div class="service-item"><i class="fas fa-mobile-alt"></i> Reparación de celulares</div>
+            <div class="service-item"><i class="fas fa-hammer"></i> Cambio de pantalla</div>
+            <div class="service-item"><i class="fas fa-unlock-alt"></i> Desbloqueo por operadora</div>
+            <div class="service-item"><i class="fas fa-sync-alt"></i> Actualización de software</div>
+            <div class="service-item"><i class="fas fa-headphones"></i> Venta de accesorios</div>
         </div>
 
         <a href="https://wa.me/50587241362" class="btn whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
 
         <a href="https://t.me/JTBsomotillo" class="btn telegram" target="_blank">
-            <i class="fab fa-telegram-plane"></i> Unirse a Telegram
+            <i class="fab fa-telegram-plane"></i> Telegram
         </a>
 
         <div class="footer">
